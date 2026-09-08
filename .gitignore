@@ -5,7 +5,9 @@ env/
 
 # Ignore large datasets and data folders
 data/
-datasets/
+dataset/
+corrections/
+model/labels.txt
 *.csv
 *.json
 *.h5

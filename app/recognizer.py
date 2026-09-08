@@ -29,8 +29,11 @@ class FaceRecognizer:
         if self.model is None:
             return False, "Model Not Loaded", 0.0
 
-        # 1. Resize to 224x224 as required by Teachable Machine
-        resized_image = cv2.resize(cropped_face, (224, 224), interpolation=cv2.INTER_AREA)
+        # --- NEW CODE: Convert OpenCV's BGR to standard RGB ---
+        rgb_face = cv2.cvtColor(cropped_face, cv2.COLOR_BGR2RGB)
+
+        # 1. Resize to 224x224 as required by Teachable Machine (using the rgb_face!)
+        resized_image = cv2.resize(rgb_face, (224, 224), interpolation=cv2.INTER_AREA)
         
         # 2. Make it a numpy array and reshape
         image_array = np.asarray(resized_image, dtype=np.float32).reshape(1, 224, 224, 3)

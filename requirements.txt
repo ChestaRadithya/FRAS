@@ -1,5 +1,6 @@
-tensorflow
+tensorflow==2.15.0
+keras==2.15.0
 opencv-python
-numpy
+numpy<2.0.0
 openpyxl
-pillow
+Pillow
