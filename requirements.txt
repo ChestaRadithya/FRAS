@@ -3,4 +3,8 @@ keras==2.15.0
 opencv-python
 numpy<2.0.0
 openpyxl
+<<<<<<< HEAD
 Pillow
+=======
+Pillow
+>>>>>>> 2bd9a522bf4fe2edc7840ab5e8afbd1673daa904
