@@ -1,0 +1,16 @@
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore large datasets and data folders
+data/
+datasets/
+*.csv
+*.json
+*.h5
+*.pkl
+
+# Ignore OS-specific system files
+.DS_Store
+Thumbs.db
